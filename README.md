@@ -4,7 +4,7 @@
 
 ## 💻 📱 Check out live 📱💻
 
-dont forget to insall it to check by Add to screen
+dont forget to insall it to check by Add it to home screen
 
 <img width="160" height="160" src='./public/img/phone.png'/>
 
