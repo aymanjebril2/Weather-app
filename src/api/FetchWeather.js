@@ -2,6 +2,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 
 dotenv.config();
+console.log(process.env.REACT_APP_BASE_URL);
 
 async function FetchWeather(query) {
   const { data } = await axios.get(process.env.REACT_APP_BASE_URL, {
