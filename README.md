@@ -4,7 +4,9 @@
 
 ## 💻 📱 Check out live 📱💻
 
-dont forget to insall it to check
+dont forget to insall it to check by Add to screen
+
+<img width="160" height="160" src='./public/img/phone.png'/>
 
 - https://frosty-dubinsky-57ae10.netlify.app/
 
