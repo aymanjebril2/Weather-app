@@ -1,18 +1,20 @@
 const CACHE_NAME = "version-1";
-const urlstoCache = ["insex.html", "offline.html"];
+const urlsToCache = ["index.html", "offline.html"];
+
 const self = this;
-/// install service worker
+
+// Install SW
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("ayman");
+      console.log("Opened cache");
 
-      return cache.addAll(urlstoCache);
+      return cache.addAll(urlsToCache);
     })
   );
 });
 
-/// listen for requset
+// Listen for requests
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then(() => {
@@ -21,16 +23,16 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
-/// active the service worker
+// Activate the SW
 self.addEventListener("activate", (event) => {
-  const cacheWaiteList = [];
-  cacheWaiteList.push(CACHE_NAME);
+  const cacheWhitelist = [];
+  cacheWhitelist.push(CACHE_NAME);
 
   event.waitUntil(
     caches.keys().then((cacheNames) =>
       Promise.all(
         cacheNames.map((cacheName) => {
-          if (!cacheWaiteList.includes(cacheName)) {
+          if (!cacheWhitelist.includes(cacheName)) {
             return caches.delete(cacheName);
           }
         })
