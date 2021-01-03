@@ -2,6 +2,12 @@
 
 ## Weather Progressive Web Application
 
+## 💻 📱 Check out live 📱💻
+
+dont forget to insall it to check
+
+- https://frosty-dubinsky-57ae10.netlify.app/
+
 ## Usage of API ✔️
 
 | API         | Description                             |
