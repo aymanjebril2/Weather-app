@@ -16,7 +16,7 @@ dont forget to insall it to check by Add it to home screen
 | ----------- | --------------------------------------- |
 | OpenWeather | use the endpoint api.openweathermap.org |
 
-## 📱 How SPK works 📱:-
+## 📱 How works 📱:-
 
 > - search by city
 > - input will call the api
